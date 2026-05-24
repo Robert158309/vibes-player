@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang = "es-GT">
+
+    <head>
+
+        <meta charset = "utf-8">
+
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta name = "theme-color" content = "#0E1833">
+        <meta name = "author" content = "Roberto Monzón">
+        <meta name = "color-scheme" content = "dark">
+
+        <meta property = "og:locale" content = "es_GT">
+
+        <title>Vibes Player</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "styles/base.css">
+
+    </head>
+
+    <body>
+
+        <nav></nav>
+
+        <h1>Vibes Player</h1>
+
+        <audio id = "audiocontroler"></audio>
+
+        <footer>
+
+            <section id = "play_controls">
+                <button>
+                    <img src = "assets/icons/player-track-prev.svg" class = "footer_icons">
+                </button>
+                <button id = "play">
+                    <img src = "assets/icons/player-play.svg" class = "footer_icons">
+                </button>
+                <button id = "pause">
+                    <img src = "assets/icons/player-pause.svg" class = "footer_icons">
+                </button>
+                <button>
+                    <img src = "assets/icons/player-track-next.svg" class = "footer_icons">
+                </button>
+            </section>
+
+            <section id = "music_control">
+                <input type = "range" id = "progress" min = "0" max = "100" value = "0">
+            </section>
+
+            <section id = "volume_control">
+                <input type = "range" id = "volume" min = "0" max = "1" step = "0.01">
+            </section>
+
+        </footer>
+
+    </body>
+
+</html>
