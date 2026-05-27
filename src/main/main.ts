@@ -27,6 +27,7 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
+
   createWindow();
 
   app.on("activate", () => {
@@ -34,10 +35,13 @@ app.whenReady().then(() => {
       createWindow();
     }
   });
+
 });
 
 app.on("window-all-closed", () => {
+
   if (process.platform !== "darwin") {
     app.quit();
   }
+  
 });

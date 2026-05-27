@@ -21,35 +21,63 @@
 
     <body>
 
-        <nav></nav>
-
-        <h1>Vibes Player</h1>
-
         <audio id = "audiocontroler"></audio>
+
+        <main class = "container">
+
+            <aside id = "menu">
+
+                <h3>Vibes Player</h3>
+
+                <nav id = "navbar">
+
+                    <a class = "btns">Inicio</a>
+                    <a class = "btns">Listas</a> 
+                    <a class = "btns">Biblioteca</a> 
+                    <a class = "btns">Ajustes</a>
+                
+                </nav>
+
+            </aside>
+
+            <aside id = "view-container">
+                <article>
+                    <p id = "name-song"></p>
+                </article>
+            </aside>
+
+        </main>
 
         <footer>
 
             <section id = "play_controls">
-                <button>
-                    <img src = "assets/icons/player-track-prev.svg" class = "footer_icons">
-                </button>
-                <button id = "play">
-                    <img src = "assets/icons/player-play.svg" class = "footer_icons">
-                </button>
-                <button id = "pause">
-                    <img src = "assets/icons/player-pause.svg" class = "footer_icons">
-                </button>
-                <button>
-                    <img src = "assets/icons/player-track-next.svg" class = "footer_icons">
-                </button>
-            </section>
 
-            <section id = "music_control">
+                <section id = "top_controls">
+
+                    <section id = "playback_controls">
+
+                        <button>
+                            <img src = "assets/icons/player-track-prev.svg" class = "footer_icons">
+                        </button>
+
+                        <button id = "play">
+                            <img src = "assets/icons/player-play.svg" class = "footer_icons">
+                        </button>
+
+                        <button>
+                            <img src = "assets/icons/player-track-next.svg" class = "footer_icons">
+                        </button>
+
+                    </section>
+
+                    <section id = "volume_control">
+                        <input type = "range" id = "volume" min = "0" max = "1" step = "0.01">
+                    </section>
+
+                </section>
+
                 <input type = "range" id = "progress" min = "0" max = "100" value = "0">
-            </section>
 
-            <section id = "volume_control">
-                <input type = "range" id = "volume" min = "0" max = "1" step = "0.01">
             </section>
 
         </footer>
