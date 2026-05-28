@@ -15,6 +15,7 @@ function createWindow() {
     minWidth: 800,
     minHeight: 500,
     resizable: true,
+    icon: path.join(__dirname, "../../src/renderer/assets/icons/favicon.ico"),
 
     webPreferences: {
       nodeIntegration: true,
@@ -22,6 +23,8 @@ function createWindow() {
     }
 
   });
+
+  mainWindow.setMenu(null);
 
   mainWindow.loadFile(
     path.join(__dirname, "../../src/renderer/index.html")

@@ -1,7 +1,5 @@
 const container = document.getElementById("view-container") as HTMLElement;
 
-console.log(container);
-
 async function loadView(view: string): Promise<void> {
 
     try {

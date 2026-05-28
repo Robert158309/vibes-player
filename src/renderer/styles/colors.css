@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+:root {
+
+    /* BACKGROUNDS */
+    --bg-primary: #02031d;
+    --bg-secondary: #010311;
+    --bg-hover: #040720;
+
+    /* TEXT */
+    --text-primary: #ffffff;
+    --text-secondary: #b8c1ec;
+
+    /* ACCENTS */
+    --accent-primary: #00bfff;
+    --accent-secondary: #4f46e5;
+
+    /* CONTROLS */
+    --range-bg: #555;
+
+    /* EFFECTS */
+    --icon-filter: invert(1);
+
+}
